@@ -1,0 +1,175 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+body{
+    font-family: "poppins", sans-serif;
+}
+.card-image{
+    background-image: url('./assets/img-house.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+/*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
+    width:300px;
+    height: 200px;
+    border-radius: 6px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.card-image .like-button{
+    background-image:url('./assets/icon-favorite.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 24px 24px;
+    cursor: pointer;
+    width:36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: none;
+    position: absolute;
+    top:12px;
+    left:12px;
+}
+
+.card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 840px;
+    padding: 24px;
+}
+.card-content{
+    flex-grow: 2
+}
+
+.plus-badge{
+    background-color: #92174D;
+    border-radius: 4px;
+    width: 48px;
+    height: 22px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 1px 8px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-right: 6px;
+}
+
+.property-type span{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7D858F;
+}
+
+.property-rate strong{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #151B26;
+}
+
+.property-rate span{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7D858F;
+ }
+
+.property-rate strong::before{
+    content: '';
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('./assets/icon-star.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    
+}
+
+.card-title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #151B26;
+    margin-bottom: 16px;
+    
+} 
+.property-detail{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14285;
+    color: #7D858F;
+}
+.sr-only{
+/*    display: none;*/
+/*    display를 none으로 해줘버리면 screen reader마저 안읽어줌*/
+    position: absolute;
+/*    position relative가 없으니 집나간 자식이 돼버림*/
+    z-index: -100;
+/*    지하로 묻어버림*/
+    width: 1px;
+    height: 1px;
+/*    둘중에 하나라도 0이면 display:none과 같아짐 */
+    overflow: hidden;
+/*    1px 1px 넘어가는 애들 다 짤라버림*/
+    opacity: 0;
+    
+/*    안보이게 해주는 안전한 모든 방법*/
+}
+
+.property-detail dd span::after{
+    content: '·';
+    margin: 0 8px;
+/*    가상요소의 display는 기본적으로 inline*/
+}
+/*점만들기*/
+
+.property-detail dd span:last-child::after{
+    content: '';
+    margin: 0;
+}
+
+/*마지막 점 없애기*/
+
+.property-detail div:first-child{
+    margin-bottom: 8px;
+}

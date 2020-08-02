@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+body{
+    font-family: "poppins", sans-serif;
+}
+.card{
+ max-width: 840px;   
+display: flex;
+justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+/*    background-color: yellow;*/
+}
+.card-image{
+    position: relative;
+    background-image: url('./assets/img-house.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+/*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+*/
+    width: 300px;
+    height: 200px;
+    border-radius: 6px;
+    margin-right: 24px;
+}
+.like-button{
+    background-image: url('./assets/icon-favorite.svg');
+    background-repeat: no-repeat;
+    background-size: 24px 24pxs;
+    background-position: center center;
+    
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+.card-content{
+    flex-grow: 1;
+}
+
+.plus-badge {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.428;
+    width: 48px;
+    height: 22px;
+    background: #92174D;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 1px 8px;
+    text-transform: uppercase;
+    margin-right: 6px;
+    margin-bottom: 8px;
+}
+.property-type span {
+    font-size: 16px;
+    line-height: 1.25px;
+    color: #7D858F;
+}
+.property-rate{
+    font-size: 16px;
+    line-height: 1.25px;
+}
+.property-rate strong{
+    color: #151B26;
+    font-weight: 400;
+}
+.property-rate span{
+    color: #7D858F;
+}
+.property-rate::before{
+    content: '';
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('./assets/icon-star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;    
+    
+} 
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-title{
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #151B26;
+    margin-bottom: 16px;
+}
+.card-detail{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #7D858F;
+}
+.property-detail dd span::after{
+    content: '·';
+    margin: 0 8px;
+    
+}
+.property-detail dd span:last-child::after{
+    content: '';
+    margin: 0;
+}
+
+.sr-only{
+    position: absolute;
+    z-index: -100;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.property-detail div:first-child{
+    margin-bottom: 2px;
+}
+
+*/
+/*
+.card{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    max-width: 840px;
+}
+.card-image{
+    background-image: url('./assets/img-house.jpg');
+    width: 384px;
+    height: 199px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 6px;
+}
+.sr-only{
+    position: absolute;
+    z-index: -100;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+.property-type span {
+    font-size: 20px;
+    line-height: 20px;
+    color: #7D858F;
+}
+.plus-badge {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.428;
+    width: 48px;
+    height: 22px;
+    background: #92174D;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 1px 8px;
+    text-transform: uppercase;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+*/

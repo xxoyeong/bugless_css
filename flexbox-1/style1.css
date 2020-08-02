@@ -1,0 +1,38 @@
+*{
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.tab-menu-item{
+    
+    float: left;
+    margin-right: 16px;
+}
+
+a{
+    display: inline-block;
+    padding: 16px 20px;
+}
+.tab-menu {
+  padding-left: 0;
+  border-bottom: 1px solid #e5eaef;
+  list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tab-menu::after{
+    content: '';
+    display: block;
+    clear: both;
+    
+}
